@@ -9,7 +9,10 @@
 
 <body <?php body_class(); ?>>
 <div class="container">
-    <header class="site-header">
-        <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-        <h4><?php bloginfo( 'description' ); ?></h4>
+    <header>
+        <div class="flex-header">
+            <div><a href="<?php echo home_url() ?>" class="current-link">Beranda</a></div>
+            <div><a href="<?php echo home_url('article') ?>">Artikel</a></div>
+            <div><a href="<?php echo home_url('about') ?>">Tentang Kami</a></div>
+        </div>
     </header>
