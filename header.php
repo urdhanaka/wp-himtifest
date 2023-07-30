@@ -1,3 +1,10 @@
+<?php 
+
+global $wp;
+$CURRENT_URL = add_query_arg( array(), $wp->request );
+
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -12,8 +19,8 @@
 <div class="container">
     <header>
         <nav class="flex-header">
-            <a href="<?php echo home_url() ?>" class="current-link">Beranda</a>  
-            <a href="<?php echo home_url( 'article' ) ?>">Artikel</a>  
-            <a href="<?php echo home_url( 'about' ) ?>">Tentang Kami</a>  
+            <a href="<?php echo home_url() ?>" class="<?php if ( $CURRENT_URL == '' ) echo "current-link" ?>">Beranda</a>  
+            <a href="<?php echo home_url( 'article' ) ?>" class="<?php if ( $CURRENT_URL == 'article' ) echo "current-link" ?>">Artikel</a>  
+            <a href="<?php echo home_url( 'about' ) ?>" class="<?php if ( $CURRENT_URL == 'about' ) echo "current-link" ?>">Tentang Kami</a>  
         </nav>
     </header>
