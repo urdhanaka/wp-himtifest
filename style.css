@@ -133,18 +133,17 @@ article.post:last-of-type {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    background: pink;
     color: #366C66;
+    padding-top: 80px;
 }
 
 .hero {
-    /* background-image: url("assets/home/hero-bg.png"); */
-    background-size: contain;
+    background-image: url("assets/home/hero-bg.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    /* background-color: red; */
-    /* height: 100vh; */
-    /* width: 100vw; */
+    background-position: center;
     height: 713px;
+    margin-top: 50px;
 }
 
 .hero > img {
