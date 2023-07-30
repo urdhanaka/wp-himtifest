@@ -24,3 +24,6 @@ $CURRENT_URL = add_query_arg( array(), $wp->request );
             <a href="<?php echo home_url( 'about' ) ?>" class="<?php if ( $CURRENT_URL == 'about' ) echo "current-link" ?>">Tentang Kami</a>  
         </nav>
     </header>
+    <?php if ( $CURRENT_URL == '' ): ?>
+        <?php get_template_part( 'template-parts/header/header-hero' ); ?>
+    <?php endif; ?>
