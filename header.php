@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <script src="https://kit.fontawesome.com/588946e2b4.js" crossorigin="anonymous"></script>
     <title><?php bloginfo( 'name' ); ?></title>
     <?php wp_head() ?>
 </head>
