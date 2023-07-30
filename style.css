@@ -4,8 +4,13 @@ body {
     color: #545454;
 }
 
+.current-link {
+    font-weight: bold;
+}
+
 a:link, a:visited {
-    color: #4285f4;
+    text-decoration: none;
+    color: #0D0D0D;
 }
 
 p {
@@ -29,10 +34,19 @@ article.post:last-of-type {
     border-bottom: none;
 }
 
-.site-header {
-    border-bottom: 3px solid #ecf0f1;
+.flex-header {
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+    margin-left: 120px;
+    margin-top: 20px;
+    padding-bottom: 10px;
 }
 
+.flex-header > div {
+    margin-top: 10px;
+    margin-left: 40px;
+}
 .site-footer {
     background: #366C66;
     padding-top: 80px;
