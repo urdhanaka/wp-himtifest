@@ -47,6 +47,7 @@ article.post:last-of-type {
     margin-top: 10px;
     margin-left: 40px;
 }
+
 .site-footer {
     background: #366C66;
     padding-top: 80px;
@@ -60,6 +61,7 @@ article.post:last-of-type {
     justify-content: space-around;
     gap: 32px;
 }
+
 .around-flex-logo {
     display: flex;
     justify-content: space-around;
@@ -73,7 +75,6 @@ article.post:last-of-type {
     border-top-width: 1px;
     border-color: white;
     gap: 24px;
-
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
