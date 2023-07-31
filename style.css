@@ -36,15 +36,13 @@ article.post:last-of-type {
 
 .flex-header {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     margin-right: 100px;
-    margin-left: 120px;
-    margin-top: 20px;
-    padding-bottom: 10px;
+    margin-left: 100px;
+    margin-top: 40px;
 }
 
-.flex-header a {
-    margin-top: 10px;
+.flex-header-nav a {
     margin-left: 40px;
 }
 
@@ -149,4 +147,16 @@ article.post:last-of-type {
 
 .hero > img {
     position: absolute;
+}
+
+.home-about {
+    padding: 120px 0px 120px 0px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-about text {
+    display: grid;
 }
