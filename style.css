@@ -149,8 +149,9 @@ article.post:last-of-type {
     position: absolute;
 }
 
+/* HOME-ABOUT */
 .home-about {
-    margin: 120px 100px 120px 100px;
+    margin: 120px 100px 0px 100px;
     height: 360px;
     display: flex;
     justify-content: space-between;
@@ -190,6 +191,27 @@ article.post:last-of-type {
 .home-about .image {
     background-image: url("./assets/home/hero-bg.png"); /* placeholder, ganti kalo uda dapet image yang proper */
     border: 1px solid black;
+    border-radius: 8px;
     height: 309px;
     width: 445px;
+}
+
+/* HOME-EXPLORE */
+.home-explore {
+    margin: 132px 100px 0px 100px;
+    text-align: center;
+}
+
+.home-explore .title {
+    color: #366C66;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.home-explore .content {
+    font-size: 18px;
+}
+
+.home-explore .jamoe-type {
+    display: flex;
 }

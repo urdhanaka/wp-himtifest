@@ -11,6 +11,7 @@ get_header();
 <?php
 
 get_template_part( 'sections/home-about' );
+get_template_part( 'sections/home-explore' );
 get_footer();
 
 ?>
