@@ -8,22 +8,12 @@ get_header();
     <?php get_template_part('sections/hero'); ?>
     <?php get_template_part('sections/tentangkami-short'); ?>
 <?php endif; ?>
-    
-<?php if ( have_posts() ):
-    while ( have_posts() ): the_post(); ?>
 
-    <article class="post">
-        <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
-        <?php the_content() ?>
-    </article>
+<?php
 
-    <?php endwhile;
-
-else:
-    echo '<p>There is no post!</p>';
-
-endif;
-
+get_template_part( 'sections/home-about' );
+get_template_part( 'sections/home-explore' );
+get_template_part( 'sections/home-article' );
 get_footer();
 
 ?>
