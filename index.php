@@ -6,6 +6,7 @@ get_header();
 
 <?php if ( is_home() ) : ?>
     <?php get_template_part('sections/hero'); ?>
+    <?php get_template_part('sections/tentangkami-short'); ?>
 <?php endif; ?>
     
 <?php if ( have_posts() ):

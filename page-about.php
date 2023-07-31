@@ -4,7 +4,7 @@ get_header();
 
 ?>
 
-<h1>This text from page-about.php</h1>
+<h1>This text -about.php</h1>
 
 <?php 
 
