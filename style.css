@@ -48,6 +48,7 @@ article.post:last-of-type {
 
 .site-footer {
     background: #366C66;
+    margin-top: 120px;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-right: 64px;
@@ -190,6 +191,7 @@ article.post:last-of-type {
 
 .home-about .image {
     background-image: url("./assets/home/hero-bg.png"); /* placeholder, ganti kalo uda dapet image yang proper */
+    background-size: cover;
     border: 1px solid black;
     border-radius: 8px;
     height: 309px;
@@ -213,5 +215,24 @@ article.post:last-of-type {
 }
 
 .home-explore .jamoe-type {
+    display: flex;
+}
+
+/* HOME-ARTICLE */
+.home-article {
+    margin: 120px 100px 0px 100px;
+}
+
+.home-article .title {
+    color: #366C66;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.home-article .content {
+    font-size: 18px;
+}
+
+.home-article .article {
     display: flex;
 }
