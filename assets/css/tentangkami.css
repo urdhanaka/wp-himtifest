@@ -1,0 +1,114 @@
+.about-hero {
+    background-image: url("http://localhost/wordpress/wp-content/uploads/tentang-kami-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 713px;
+    margin-top: 50px;
+}
+
+.about-about {
+    margin: 100px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.about-about-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 715px;
+    height: 505px;
+}
+
+.about-about-title {
+    text-align: center;
+    color: var(--tropical-forest-500, #366C66);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-about-desc {
+    font-size: 18px;
+    line-height: 180%;
+    text-align: justify;
+}
+
+.about-about-image {
+    background-image: url("http://localhost/wordpress/wp-content/uploads/about-about-image.png");
+    background-size: cover;
+    border-radius: 8px;
+    width: 445px;
+    height: 505px;
+}
+
+.about-member {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 100px;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-member-title {
+    justify-content: center;
+    text-align: center;
+    color: var(--tropical-forest-500, #366C66);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-member-members {
+    display: flex;
+    gap: 44px;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo {
+    width: 384px;
+    height: 400px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    border-radius: 0px 0px 8px 8px;
+    gap: 20px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.member-name {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center
+}
+
+.icon {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.jeje {
+    background-image: url("http://localhost/wordpress/wp-content/uploads/jeje.png");
+}
+
+.dhani {
+    background-image: url("http://localhost/wordpress/wp-content/uploads/dhani.png");
+}
+
+.kevin {
+    background-image: url("http://localhost/wordpress/wp-content/uploads/kevin.png");
+}
