@@ -1,0 +1,113 @@
+/* HERO */
+
+.hero {
+    background-image: url("../home/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 713px;
+    margin-top: 50px;
+}
+
+@media (max-width: 1280px) {
+    .hero {
+        height:650px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        height:600px;
+    }
+}
+
+.hero > img {
+    position: absolute;
+}
+
+/* HOME-ABOUT */
+.home-about {
+    margin: 120px 100px 0px 100px;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-about .text {
+    width: 715px;
+    display: grid;
+}
+
+.text .title {
+    font-weight: 600;
+    font-size: 40px;
+    color: #366C66;
+}
+
+.text .content {
+    margin: 40px 0px 40px 0px;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.home-about button {
+    padding: 14px 28px;
+    width: 255px;
+    height: 52px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    background-color: #366C66;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.home-about .image {
+    background-image: url("./assets/home/hero-bg.png"); /* placeholder, ganti kalo uda dapet image yang proper */
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 309px;
+    width: 445px;
+}
+
+/* HOME-EXPLORE */
+.home-explore {
+    margin: 132px 100px 0px 100px;
+    text-align: center;
+}
+
+.home-explore .title {
+    color: #366C66;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.home-explore .content {
+    font-size: 18px;
+}
+
+.home-explore .jamoe-type {
+    display: flex;
+}
+
+/* HOME-ARTICLE */
+.home-article {
+    margin: 120px 100px 0px 100px;
+}
+
+.home-article .title {
+    color: #366C66;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.home-article .content {
+    font-size: 18px;
+}
+
+.home-article .article {
+    display: flex;
+}
