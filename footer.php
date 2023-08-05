@@ -1,6 +1,6 @@
 <footer class="site-footer content-footer">
     <div class="around-flex">
-        <a href="/"><p class="footer-logo"><?php bloginfo( 'name' ) ?></p></a>
+        <a href="<?php echo get_home_url() ?>"><p class="footer-logo"><?php bloginfo( 'name' ) ?></p></a>
         <div class="around-flex">
             <p><a href="">Link One</a></p>
             <p><a href="">Link Two</a></p>
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="center-flex footer-rights">
-        <p>2023.All right reserved.</p>
+        <p>2023 . All right reserved.</p>
         <p><a href="">Privacy Policy</a></p>
         <p><a href="">Terms of Service</a></p>
         <p><a href="">Cookies Settings</a></p>

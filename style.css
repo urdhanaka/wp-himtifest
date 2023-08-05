@@ -75,6 +75,7 @@ article.post:last-of-type {
 }
 
 .center-flex {
+    padding-top: 32px;
     display: flex;
     justify-content: center;
     border-top-style: solid;
