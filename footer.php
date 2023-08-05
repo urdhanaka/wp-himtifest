@@ -1,15 +1,13 @@
 <footer class="site-footer content-footer">
     <div class="around-flex">
         <a href="/">
-            <!-- <p class="footer-logo">
-                <?php bloginfo( 'name' ) ?>
-            </p> -->
             <img src="http://localhost/wordpress/wp-content/uploads/bertiga-favicon.png" alt="">
         </a>
         <div class="around-flex-navbar">
             <p><a href="">Beranda</a></p>
-            <p><a href="">Artikel</a></p>
             <p><a href="">Tentang Kami</a></p>
+            <p><a href="">Katalog</a></p>
+            <p><a href="">Artikel</a></p>
         </div>
         <div class="around-flex-logo">
             <a href="">
@@ -35,7 +33,7 @@
         </div>
     </div>
     <div class="center-flex footer-rights">
-        <p>2023.All right reserved.</p>
+        <p>2023 . All right reserved.</p>
         <p><a href="">Privacy Policy</a></p>
         <p><a href="">Terms of Service</a></p>
         <p><a href="">Cookies Settings</a></p>

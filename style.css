@@ -103,6 +103,7 @@ header {
         display: block;
     }
 }
+
 .flex-header-button button {
     width: 35px;
     height: 35px;
@@ -175,6 +176,12 @@ header {
     }
     .around-flex-navbar {
         justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .around-flex-navbar p {
+        margin: auto;
+        height: fit-content;
     }
     .center-flex {
         gap: 5px;
@@ -182,6 +189,7 @@ header {
 }
 
 .center-flex {
+    padding-top: 32px;
     display: flex;
     justify-content: center;
     border-top-style: solid;
