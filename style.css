@@ -59,7 +59,8 @@ article.post:last-of-type {
 header {
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 30px;
+    z-index: 100;
 }
 
 @media (max-width: 450px) {
