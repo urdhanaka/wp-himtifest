@@ -40,6 +40,51 @@
     text-decoration: none;
 }
 
+@media (max-width: 1280px) {
+    .about-hero {
+        height: 641.17px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-hero {
+        height: 570.4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 570.4px;
+    }
+}
+
+@media (max-width: 655px) {
+    .about-hero {
+        height: 570.4px;
+    }
+    .about-hero-text-desc {
+        width: fit-content;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 565px) {
+    .about-hero {
+        height: 470px;
+    }
+    .about-hero-text {
+        padding-top: 60px;
+    }
+    .about-hero-text-title {
+        font-size: 44px;
+    }
+    .about-hero-text-desc {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
 /* ABOUT */
 .about-about {
     width: fit-content;
@@ -77,18 +122,55 @@
     text-align: justify;
 }
 
-.about-about-image {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/about-about-image.png");
-    background-size: cover;
-    border-radius: 8px;
-    width: 445px;
-    height: 505px;
+.about-about img {
+    height: fit-content;
+    width: fit-content;
+    margin: auto auto;
+}
+
+@media (max-width: 1024px) {
+    .about-about {
+        gap: 40px;
+    }
+
+    .about-about-text {
+        width: 386.1px;
+    }
+}
+
+@media (max-width: 920px) {
+    .about-about {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 80px;
+        padding: 70px 20px 50px 20px;
+    }
+
+    .about-about-text {
+        width: fit-content;
+        padding: 0px 20px;
+    }
+
+    .about-about button {
+        margin: auto auto;
+    }
+
+    .about-about img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-about img {
+        display: none;
+    }
 }
 
 /* MEMBERS */
 .about-member {
     display: flex;
     flex-direction: column;
+    margin: auto;
     padding: 40px 100px;
     align-items: center;
     gap: 40px;
@@ -116,7 +198,7 @@
 
 .photo {
     width: 384px;
-    height: 400px;
+    height: auto;
 }
 
 .description {
@@ -142,14 +224,26 @@
     gap: 12px;
 }
 
-.jeje {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/jeje.png");
+@media (max-width: 1240px) {
+    .photo {
+        width: 284px;
+    }
 }
 
-.dhani {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/dhani.png");
+@media (max-width: 1024px) {
+    .member-name {
+        font-size: 20px;
+    }
 }
 
-.kevin {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/kevin.png");
+@media (max-width: 950px) {
+    .photo {
+        width: 240px;
+    }
+}
+
+@media (max-width: 810px) {
+    .about-member-members {
+        flex-direction: column;
+    }
 }

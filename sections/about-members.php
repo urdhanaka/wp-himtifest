@@ -2,7 +2,7 @@
     <h1 class="about-member-title">Anggota Kami</h1>
     <div class="about-member-members">
         <div class="members">
-            <div class="photo jeje"></div>
+            <img src="http://localhost/wordpress/wp-content/uploads/jeje.png" class="photo">
             <div class="description">
                 <h1 class="member-name">M Naufal Ihza Syahzada</h1>
                 <div class="icon">
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="members">
-            <div class="photo dhani"></div>
+            <img src="http://localhost/wordpress/wp-content/uploads/dhani.png" class="photo">
             <div class="description">
                 <h1 class="member-name">Urdhanaka Aptanagi</h1>
                 <div class="icon">
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="members">
-            <div class="photo kevin"></div>
+            <img src="http://localhost/wordpress/wp-content/uploads/kevin.png" class="photo">
             <div class="description">
                 <h1 class="member-name">Christian Kevin Emor</h1>
                 <div class="icon">
