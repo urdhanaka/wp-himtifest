@@ -1,34 +1,74 @@
+/* HERO */
 .about-hero {
     background-image: url("http://localhost/wordpress/wp-content/uploads/tentang-kami-image.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 713px;
-    margin-top: 50px;
+    height: 90vh;
 }
 
+.about-hero-text {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: #366C66;
+    padding-top: 100px;
+}
+
+.about-hero-text-title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-hero-text-desc {
+    width: 630px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    color: black;
+}
+
+.about-hero-text-button {
+    border-width: 0px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* ABOUT */
 .about-about {
-    margin: 100px auto 0px auto;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
+    justify-content: space-around;
+    gap: 80px;
+    padding: 70px 0px 90px 0px;
 }
 
-.about-about-text-container {
+.about-about-text {
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 715px;
-    height: 505px;
 }
 
-.about-about-title {
+.about-about-text-title {
     text-align: center;
-    color: var(--tropical-forest-500, #366C66);
-    font-size: 40px;
     font-weight: 600;
-    line-height: normal;
+    color: #366C66;
+}
+
+.about-about-text-desc {
+    font-size: 18px;
+    line-height: 180%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-about-desc {
@@ -45,6 +85,7 @@
     height: 505px;
 }
 
+/* MEMBERS */
 .about-member {
     display: flex;
     flex-direction: column;
@@ -57,7 +98,6 @@
     justify-content: center;
     text-align: center;
     color: var(--tropical-forest-500, #366C66);
-    font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -97,8 +137,9 @@
 
 .icon {
     display: flex;
+    justify-content: space-between;
+    margin: auto;
     gap: 12px;
-    justify-content: center;
 }
 
 .jeje {
