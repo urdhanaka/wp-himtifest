@@ -14,5 +14,5 @@
             </svg>
         </button>
     </div>
-    <img class="home-hero-background" src="http://localhost/wordpress/wp-content/uploads/bertiga-bg-wp-beranda-3.png" alt="">
+    <img class="home-hero-background" src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-bg-wp-beranda-3.png" alt="">
 </section>

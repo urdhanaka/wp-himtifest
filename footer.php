@@ -1,7 +1,7 @@
 <footer class="site-footer content-footer">
     <div class="around-flex">
         <a href="/">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-favicon-white.png" alt="">
+            <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-favicon-white.png" alt="">
         </a>
         <div class="around-flex-navbar">
             <p><a href="<?php echo home_url( '' ) ?>" class="<?php if ( $CURRENT_URL == '' ) echo "current-link" ?>">Beranda</a></p>

@@ -49,5 +49,5 @@
             melalui platform website yang kami ciptakan.
         </div>
     </div>
-    <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-tentangkami.png">
+    <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-img-wp-tentangkami.png">
 </section>

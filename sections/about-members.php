@@ -2,7 +2,7 @@
     <h1 class="about-member-title">Anggota Kami</h1>
     <div class="about-member-members">
         <div class="members">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-tentangkami-member-1.png" class="photo">
+            <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-img-wp-tentangkami-member-1.png" class="photo">
             <div class="description">
                 <h1 class="member-name">M Naufal Ihza Syahzada</h1>
                 <div class="icon">
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="members">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-tentangkami-member-2.png" class="photo">
+            <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-img-wp-tentangkami-member-2.png" class="photo">
             <div class="description">
                 <h1 class="member-name">Urdhanaka Aptanagi</h1>
                 <div class="icon">
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="members">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-tentangkami-member-3.png" class="photo">
+            <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-img-wp-tentangkami-member-3.png" class="photo">
             <div class="description">
                 <h1 class="member-name">Christian Kevin Emor</h1>
                 <div class="icon">

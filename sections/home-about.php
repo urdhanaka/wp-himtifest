@@ -33,5 +33,5 @@
             </svg>
         </button>
     </div>
-    <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-beranda-about.png" alt="">
+    <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-img-wp-beranda-about.png" alt="">
 </section>

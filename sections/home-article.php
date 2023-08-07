@@ -34,7 +34,7 @@
     </div>
     <div class="home-article-cards">
         <div class="home-article-card">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-artikel-1.png" alt="" style="z-index: 1;">
+            <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-img-wp-artikel-1.png" alt="" style="z-index: 1;">
             <div class="home-article-card-text">
                 <h2 class="home-article-card-text-title">Manfaat dan Khasiat Jamu Kunyit Asam untuk Kesehatan</h2>
                 <p class="home-article-card-text-desc">Artikel ini mengulas tentang jamu kunyit asam, minuman tradisional yang terkenal karena khasiatnya ...</p>
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="home-article-card">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-artikel-3.png" alt="" style="z-index: 1;">
+            <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-img-wp-artikel-3.png" alt="" style="z-index: 1;">
             <div class="home-article-card-text">
                 <h2 class="home-article-card-text-title">Perjuangan Wanita Penjaga Warisan Jamu Tradisional</h2>
                 <p class="home-article-card-text-desc">Kisah inspiratif ini mengisahkan tentang seorang wanita yang gigih mempertahankan warisan jamu tra ...</p>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="home-article-card">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-artikel-2.png" alt="" style="z-index: 1;">
+            <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-img-wp-artikel-2.png" alt="" style="z-index: 1;">
             <div class="home-article-card-text">
                 <h2 class="home-article-card-text-title">Perubahan Hidup Melalui Khasiat Jamu: Kisah Inspiratif Seorang Pecandu Obat</h2>
                 <p class="home-article-card-text-desc">Kisah ini mengisahkan perjalanan seorang pria yang dulunya merupakan seorang pecandu obat-obatan t ...</p>
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="home-article-card">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-artikel-4.png" alt="" style="z-index: 1;">
+            <img src="<?php echo get_site_url(); ?>/wp-content/uploads/bertiga-img-wp-artikel-4.png" alt="" style="z-index: 1;">
             <div class="home-article-card-text">
                 <h2 class="home-article-card-text-title">Perjuangan Seorang Wanita untuk Memiliki Anak</h2>
                 <p class="home-article-card-text-desc">Kisah ini mengisahkan tentang seorang wanita yang mengalami kesulitan dalam merencanakan kehamilan ...</p>
