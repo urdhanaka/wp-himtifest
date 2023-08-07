@@ -37,30 +37,30 @@
             Mari kita explor segala jenis jamu yang ada di Indonesia untuk melestarikan dan membudidayakan minuman ini!
         </p>
     </div>
-    <div class="home-explore-cards">
+    <div class="home-explore-cards" style="z-index: 1;">
         <div class="home-explore-card">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-katalog-1.png">
+            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-katalog-1.png" style="z-index: 1;">
             <div class="home-explore-card-text">
                 <h2 class="home-explore-card-text-title">Beras Kencur</h2>
                 <p class="home-explore-card-text-desc">Jamu Beras Kencur adalah minuman tradisional Indonesia yang terbuat dari campuran beras, kencur, gula merah, ...</p>
             </div>
         </div>
         <div class="home-explore-card">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-katalog-2.png">
+            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-katalog-2.png" style="z-index: 1;">
             <div class="home-explore-card-text">
                 <h2 class="home-explore-card-text-title">Sinom</h2>
                 <p class="home-explore-card-text-desc">Jamu Sinom adalah minuman tradisional khas Jawa yang terbuat dari bahan-bahan alami seperti asam jawa ...</p>
             </div>
         </div>
         <div class="home-explore-card">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-katalog-3.png">
+            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-katalog-3.png" style="z-index: 1;">
             <div class="home-explore-card-text">
                 <h2 class="home-explore-card-text-title">Temulawak Sirih</h2>
                 <p class="home-explore-card-text-desc">Rasa pahit dari temulawak dipadukan dengan kesegaran dari sirih, menciptakan minuman yang menyega ...</p>
             </div>
         </div>
         <div class="home-explore-card">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-katalog-4.png">
+            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-katalog-4.png" style="z-index: 1;">
             <div class="home-explore-card-text">
                 <h2 class="home-explore-card-text-title">Uyup - Uyup</h2>
                 <p class="home-explore-card-text-desc">Jamu Uyup Uyup sering diminum oleh masyarakat Indonesia sebagai upaya untuk menjaga kesehatan organ ginjal ...</p>

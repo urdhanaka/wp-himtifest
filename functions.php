@@ -13,6 +13,7 @@ function custom_theme_assets() {
 	wp_enqueue_script( 'beranda', get_template_directory_uri() . '/assets/js/beranda.js' );
 	wp_enqueue_script( 'artikel', get_template_directory_uri() . '/assets/js/artikel.js' );
 	wp_enqueue_script( 'katalog', get_template_directory_uri() . '/assets/js/katalog.js' );
+	wp_enqueue_script( 'tentangkami', get_template_directory_uri() . '/assets/js/tentangkami.js' );
 }
 
 add_action( 'wp_enqueue_scripts', 'custom_theme_assets' );

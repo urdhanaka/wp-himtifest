@@ -60,11 +60,12 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    z-index: 100;
 }
 
 @media (max-width: 450px) {
     header {
-        top: 0;
+        top: 0px;
     }
 }
 

@@ -1,34 +1,239 @@
+/* 
+! ABOUT-HERO
+*/
+
 .about-hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    position: relative;
+}
+
+.about-hero-background {
+    width: 100%;
+}
+
+.about-hero-text {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: #366C66;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    padding: 0 10px;
+}
+
+.about-hero-text-title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-hero-text-desc {
+    width: 630px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    color: black;
+}
+
+.about-hero-text-button {
+    border-width: 0px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.about-hero-text-button:hover {
+    border-width: 0px;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+    .about-hero-text-desc {
+        margin-bottom: 20px;
+    } 
+}
+
+@media (max-width: 1024px) {
+    .about-hero-text-title {
+        font-size: 44px;
+    }
+    .about-hero-background {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 685px) {
+    .about-hero-background {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 655px) {
+    .about-hero-text-desc {
+        width: fit-content;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+    .about-hero-background {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 565px) {
+    .about-hero-text-title {
+        font-size: 36px;
+    }
+    .about-hero-text-desc {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .about-hero-text {
+        top: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-background {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 415px) {
+    .about-hero-background {
+        margin-top: 50%;
+    }
+}
+
+/* .about-hero {
     background-image: url("http://localhost/wordpress/wp-content/uploads/tentang-kami-image.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 713px;
-    margin-top: 50px;
+    height: 90vh;
 }
 
+.about-hero-text {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: #366C66;
+    padding-top: 100px;
+}
+
+.about-hero-text-title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-hero-text-desc {
+    width: 630px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    color: black;
+}
+
+.about-hero-text-button {
+    border-width: 0px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+    .about-hero {
+        height: 641.17px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-hero {
+        height: 570.4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 570.4px;
+    }
+}
+
+@media (max-width: 655px) {
+    .about-hero {
+        height: 570.4px;
+    }
+    .about-hero-text-desc {
+        width: fit-content;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 565px) {
+    .about-hero {
+        height: 470px;
+    }
+    .about-hero-text {
+        padding-top: 60px;
+    }
+    .about-hero-text-title {
+        font-size: 44px;
+    }
+    .about-hero-text-desc {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+} */
+
+/* ABOUT */
 .about-about {
-    margin: 100px auto 0px auto;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
+    justify-content: space-around;
+    gap: 80px;
+    padding: 70px 0px 90px 0px;
 }
 
-.about-about-text-container {
+.about-about-text {
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 715px;
-    height: 505px;
 }
 
-.about-about-title {
+.about-about-text-title {
     text-align: center;
-    color: var(--tropical-forest-500, #366C66);
-    font-size: 40px;
     font-weight: 600;
-    line-height: normal;
+    color: #366C66;
+}
+
+.about-about-text-desc {
+    font-size: 18px;
+    line-height: 180%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-about-desc {
@@ -37,17 +242,55 @@
     text-align: justify;
 }
 
-.about-about-image {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/about-about-image.png");
-    background-size: cover;
-    border-radius: 8px;
-    width: 445px;
-    height: 505px;
+.about-about img {
+    height: fit-content;
+    width: fit-content;
+    margin: auto auto;
 }
 
+@media (max-width: 1024px) {
+    .about-about {
+        gap: 40px;
+    }
+
+    .about-about-text {
+        width: 386.1px;
+    }
+}
+
+@media (max-width: 920px) {
+    .about-about {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 80px;
+        padding: 70px 20px 50px 20px;
+    }
+
+    .about-about-text {
+        width: fit-content;
+        padding: 0px 20px;
+    }
+
+    .about-about button {
+        margin: auto auto;
+    }
+
+    .about-about img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-about img {
+        display: none;
+    }
+}
+
+/* MEMBERS */
 .about-member {
     display: flex;
     flex-direction: column;
+    margin: auto;
     padding: 40px 100px;
     align-items: center;
     gap: 40px;
@@ -57,7 +300,6 @@
     justify-content: center;
     text-align: center;
     color: var(--tropical-forest-500, #366C66);
-    font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -76,7 +318,7 @@
 
 .photo {
     width: 384px;
-    height: 400px;
+    height: auto;
 }
 
 .description {
@@ -97,18 +339,31 @@
 
 .icon {
     display: flex;
+    justify-content: space-between;
+    margin: auto;
     gap: 12px;
-    justify-content: center;
 }
 
-.jeje {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/jeje.png");
+@media (max-width: 1240px) {
+    .photo {
+        width: 284px;
+    }
 }
 
-.dhani {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/dhani.png");
+@media (max-width: 1024px) {
+    .member-name {
+        font-size: 20px;
+    }
 }
 
-.kevin {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/kevin.png");
+@media (max-width: 950px) {
+    .photo {
+        width: 240px;
+    }
+}
+
+@media (max-width: 810px) {
+    .about-member-members {
+        flex-direction: column;
+    }
 }
