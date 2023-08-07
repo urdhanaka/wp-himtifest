@@ -1,3 +1,7 @@
+/*
+! GENERAL
+*/
+
 * {
     margin: 0;
 }
@@ -43,7 +47,13 @@ article.post:last-of-type {
     border-bottom: none;
 }
 
-/* SUB-TITLE */
+/*
+! END GENERAL
+*/
+
+/*
+! SUB-TITLE
+*/
 
 #sub-title {
     font-size: 40px;
@@ -55,7 +65,14 @@ article.post:last-of-type {
     }
 }
 
-/* HEADER */
+/*
+! END SUB-TITLE
+*/
+
+/*
+! HEADER
+*/
+
 header {
     position: -webkit-sticky;
     position: sticky;
@@ -81,6 +98,12 @@ header {
 
 .flex-header-nav a {
     margin-right: 40px;
+}
+
+@media (max-width: 600px) {
+    .flex-header-nav a {
+        margin-right: 20px;
+    }
 }
 
 .flex-header-nav button {
@@ -136,8 +159,14 @@ header {
     color: white;
 }
 
+/*
+! END HEADER
+*/
 
-/* FOOTER */
+/*
+! FOOTER
+*/
+
 .site-footer {
     background: #366C66;
     margin-top: 120px;
@@ -228,7 +257,90 @@ header {
 }
 
 @media (max-width: 765px) {
-    #left-wing {
+    #wing {
         display: none;
     }
 }
+
+/*
+! END FOOTER
+*/
+
+/*
+! FLOATING
+*/
+
+.floating-post {
+    position: fixed;
+    /* width: fit-content;
+    height: fit-content; */
+    width: 300px;
+    height: fit-content;
+    min-height: 300px;
+    background-color: white;
+    filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: auto;
+
+    border-radius: 12px;
+
+    z-index: 9999;
+
+    overflow: hidden;
+
+    display: none;
+}
+
+.floating-post-text {
+    padding: 70px 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.floating-post-text h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.floating-post-text p {
+    color: grey;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.floating-post-close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #366C66;
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    border-radius: 99999px;
+}
+
+.floating-post-close:hover {
+    /* background-color: red; */
+    border-color: red;
+    color: black;
+    /* border-width: 10px; */
+    font-weight: 900;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/*
+! END FLOATING
+*/

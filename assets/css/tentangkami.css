@@ -119,92 +119,6 @@
     }
 }
 
-/* .about-hero {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/tentang-kami-image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 90vh;
-}
-
-.about-hero-text {
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-    color: #366C66;
-    padding-top: 100px;
-}
-
-.about-hero-text-title {
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.about-hero-text-desc {
-    width: 630px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-    margin-top: 24px;
-    margin-bottom: 60px;
-    color: black;
-}
-
-.about-hero-text-button {
-    border-width: 0px;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-@media (max-width: 1280px) {
-    .about-hero {
-        height: 641.17px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .about-hero {
-        height: 570.4px;
-    }
-}
-
-@media (max-width: 768px) {
-    .about-hero {
-        height: 570.4px;
-    }
-}
-
-@media (max-width: 655px) {
-    .about-hero {
-        height: 570.4px;
-    }
-    .about-hero-text-desc {
-        width: fit-content;
-        margin-bottom: 40px;
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 565px) {
-    .about-hero {
-        height: 470px;
-    }
-    .about-hero-text {
-        padding-top: 60px;
-    }
-    .about-hero-text-title {
-        font-size: 44px;
-    }
-    .about-hero-text-desc {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-} */
-
 /* ABOUT */
 .about-about {
     width: fit-content;
@@ -213,7 +127,7 @@
     display: flex;
     justify-content: space-around;
     gap: 80px;
-    padding: 70px 0px 90px 0px;
+    padding: 70px 20px 90px 20px;
 }
 
 .about-about-text {

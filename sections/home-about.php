@@ -1,4 +1,4 @@
-<div class="home-about" id="scroll-to-here" >
+<section class="home-about" id="scroll-to-here" >
     <div class="home-about-text">
         <div id="sub-title" class="home-about-text-title">
             Tentang Jepret Jamu
@@ -24,7 +24,7 @@
             Kami muncul dengan beranggotakan 3 orang yang sangat antusias dengan khasiat Jamu yang telah kami 
             rasakan di kehidupan kami.
         </div>
-        <button class="home-about-button">
+        <button class="home-about-button" onclick="location.href='<?php echo home_url( 'tentang' ) ?>'">
             <p class="home-about-button-text">
                 Lihat Selengkapnya
             </p>
@@ -34,4 +34,4 @@
         </button>
     </div>
     <img src="http://localhost/wordpress/wp-content/uploads/bertiga-img-wp-beranda-about.png" alt="">
-</div>
+</section>

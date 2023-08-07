@@ -1,7 +1,7 @@
 <section class="about-about" id="scroll-to-here">
     <div class="about-about-text">
         <div id="sub-title" class="about-about-text-title">
-            <svg id="left-wing" xmlns="http://www.w3.org/2000/svg" width="126" height="17" viewBox="0 0 126 17" fill="none">
+            <svg id="wing" xmlns="http://www.w3.org/2000/svg" width="126" height="17" viewBox="0 0 126 17" fill="none">
                 <mask id="mask0_1833_112" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="0" width="121" height="17">
                     <path d="M125.5 0.5H5.08607V16.5H125.5V0.5Z" fill="white" />
                 </mask>
@@ -17,7 +17,7 @@
                 </g>
             </svg>
             Jepret Jamu
-            <svg xmlns="http://www.w3.org/2000/svg" width="125" height="17" viewBox="0 0 125 17" fill="none">
+            <svg id="wing" xmlns="http://www.w3.org/2000/svg" width="125" height="17" viewBox="0 0 125 17" fill="none">
                 <mask id="mask0_1833_81" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="121" height="17">
                     <path d="M0 0.5H120.414V16.5H0V0.5Z" fill="white" />
                 </mask>

@@ -298,14 +298,12 @@
     position: absolute;
     right: 0;
     bottom: 0;
-}
-
-.article-article-card-text a {
     font-size: 14px;
     color: #EFAD38;
     font-weight: 700;
     line-height: 140%;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 @media (max-width: 1265px) {

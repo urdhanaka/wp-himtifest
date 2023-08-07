@@ -1,6 +1,6 @@
-<section class="home-explore">
-    <div class="home-explore-text">
-        <div id="sub-title" class="home-explore-text-title">
+<section class="article-article">
+    <div class="article-article-text">
+        <div id="sub-title" class="article-article-text-title">
             <svg id="wing" xmlns="http://www.w3.org/2000/svg" width="126" height="17" viewBox="0 0 126 17" fill="none">
                 <mask id="mask0_1833_112" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="0" width="121" height="17">
                     <path d="M125.5 0.5H5.08607V16.5H125.5V0.5Z" fill="white"/>
@@ -16,7 +16,7 @@
                     <path d="M12.3766 15.1445C9.47358 14.776 6.79837 13.5126 4.77726 11.601C3.74098 10.637 2.85904 9.53153 2.25271 8.31418C1.74927 7.34687 0.812212 5.62284 1.56921 4.63579C1.92566 4.17517 2.53199 4.10608 2.98398 4.47457C3.84387 5.13918 3.71893 6.65923 4.07171 7.62325C4.47593 8.72874 5.05654 9.76185 5.78781 10.7061C7.43042 12.7526 9.77858 14.2463 12.4538 14.9142C12.6302 14.9373 12.5567 15.1676 12.3766 15.1445Z" fill="#366C66"/>
                 </g>
             </svg>
-            Ayo Jelajahi Jamu
+            Artikel Untuk Kamu Baca
             <svg id="wing" xmlns="http://www.w3.org/2000/svg" width="126" height="17" viewBox="0 0 126 17" fill="none">
                 <mask id="mask0_1833_99" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="121" height="17">
                     <path d="M0.5 0.5H120.914V16.5H0.5V0.5Z" fill="white"/>
@@ -33,35 +33,32 @@
                 </g>
             </svg>    
         </div>
-        <p class="home-explore-text-desc">
-            Mari kita explor segala jenis jamu yang ada di Indonesia untuk melestarikan dan membudidayakan minuman ini!
-        </p>
     </div>
-    <div class="home-explore-cards" style="z-index: 1;">
+
+    <div class="article-article-cards-rect">
         <?php
         $args = array(
-            'category_name' => 'jamu',
-            // 'posts_per_page' => 4, 
+            'category_name' => 'utama',
+            // 'posts_per_page' => 4,
         );
-
         $posts = get_posts($args);
 
         foreach ($posts as $index => $post) {
             setup_postdata($post);
             $title = get_the_title();
             $excerpt = get_the_excerpt();
-            $trimmed_excerpt = wp_trim_words($excerpt, 15);
+            $trimmed_excerpt = wp_trim_words($excerpt, 10);
             $category_slug = $args['category_name'];
-            $image_src = get_site_url() . "/wp-content/uploads/bertiga-img-wp-katalog-" . $category_slug . "-"  . ($index + 1) . ".png";
+            $image_src = get_site_url() . "/wp-content/uploads/bertiga-img-wp-artikel-". $category_slug . "-" . ($index + 1) . ".png";
             ?>
 
-            <div class="home-explore-card">
+            <div class="article-article-card-rect" data-title="<?php echo $title; ?>" data-desc="<?php echo $excerpt; ?>" onclick="showFloating(this)">
                 <img src="<?php echo $image_src; ?>" style="z-index: 1;">
-                <div class="home-explore-card-text">
-                    <h2 class="home-explore-card-text-title">
+                <div class="article-article-card-rect-text">
+                    <h2 id="data-title" class="article-article-card-text-title">
                         <?php echo $title; ?>
                     </h2>
-                    <p class="home-explore-card-text-desc">
+                    <p class="article-article-card-rect-text-desc">
                         <?php echo $trimmed_excerpt; ?>
                     </p>
                 </div>
@@ -71,12 +68,51 @@
         wp_reset_postdata();
         ?>
     </div>
-    <button class="home-explore-button" onclick="location.href='<?php echo home_url( 'katalog' ) ?>'">
-        <p class="home-explore-button-text">
-            Lihat Selengkapnya
-        </p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-            <path d="M12.5 5V19M12.5 19L6.5 13M12.5 19L18.5 13" stroke="#366C66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+    
+    <div class="article-article-cards">
+        <?php
+        $args = array(
+            'category_name' => 'artikel',
+            // 'posts_per_page' => 4,
+        );
+        $posts = get_posts($args);
+
+        foreach ($posts as $index => $post) {
+            setup_postdata($post);
+            $title = get_the_title();
+            $excerpt = get_the_excerpt();
+            $trimmed_excerpt = wp_trim_words($excerpt, 10);
+            $category_slug = $args['category_name'];
+            $image_src = get_site_url() . "/wp-content/uploads/bertiga-img-wp-artikel-" . ($index + 1) . ".png";
+            ?>
+
+            <div class="article-article-card">
+                <img src="<?php echo $image_src; ?>" style="z-index: 1;">
+                <div class="article-article-card-text">
+                    <h2 class="article-article-card-text-title">
+                        <?php echo $title; ?>
+                    </h2>
+                    <p class="article-article-card-text-desc">
+                        <?php echo $trimmed_excerpt; ?>
+                    </p>
+                    <p class="article-article-card-text-extend" data-title="<?php echo $title; ?>" data-desc="<?php echo $excerpt; ?>" onclick="showFloating(this)" >
+                        Link Selengkapnya
+                    </p>
+                </div>
+            </div>
+            
+        <?php }
+        wp_reset_postdata();
+        ?>
+    </div>
+</section>
+
+<section id="floating-post" class="floating-post">
+    <div id="kiriman-content" class="floating-post-text">
+        <h2 id="kiriman-content-title"></h2>
+        <p id="kiriman-content-desc"></p>
+    </div>
+    <button id="floating-post" class="floating-post-close" onclick="closeFloating()">
+        X
     </button>
 </section>

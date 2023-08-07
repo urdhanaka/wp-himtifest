@@ -1,4 +1,4 @@
-<div class="home-article">
+<section class="home-article">
     <div class="home-article-header">
         <div class="home-article-header-text">
             <div id="sub-title" class="home-article-header-text-title">
@@ -23,7 +23,7 @@
                 Kami selalu menyediakan Berita terhangat untuk kamu pecinta Jamu!
             </div>
         </div>
-        <button class="home-article-header-button">
+        <button class="home-article-header-button" onclick="location.href='<?php echo home_url( 'artikel' ) ?>'">
             <p class="home-article-header-button-text">
                 Lihat Selengkapnya
             </p>
@@ -38,7 +38,7 @@
             <div class="home-article-card-text">
                 <h2 class="home-article-card-text-title">Manfaat dan Khasiat Jamu Kunyit Asam untuk Kesehatan</h2>
                 <p class="home-article-card-text-desc">Artikel ini mengulas tentang jamu kunyit asam, minuman tradisional yang terkenal karena khasiatnya ...</p>
-                <a class="home-article-card-text-extend" href="">Link Selengkapnya</a>
+                <a class="home-article-card-text-extend" href="<?php echo home_url( 'artikel' ) ?>" class="<?php if ( $CURRENT_URL == 'artikel' ) echo "current-link" ?>">Link Selengkapnya</a>
             </div>
         </div>
         <div class="home-article-card">
@@ -46,7 +46,7 @@
             <div class="home-article-card-text">
                 <h2 class="home-article-card-text-title">Perjuangan Wanita Penjaga Warisan Jamu Tradisional</h2>
                 <p class="home-article-card-text-desc">Kisah inspiratif ini mengisahkan tentang seorang wanita yang gigih mempertahankan warisan jamu tra ...</p>
-                <a class="home-article-card-text-extend" href="">Link Selengkapnya</a>
+                <a class="home-article-card-text-extend" href="<?php echo home_url( 'artikel' ) ?>" class="<?php if ( $CURRENT_URL == 'artikel' ) echo "current-link" ?>">Link Selengkapnya</a>
             </div>
         </div>
         <div class="home-article-card">
@@ -54,7 +54,7 @@
             <div class="home-article-card-text">
                 <h2 class="home-article-card-text-title">Perubahan Hidup Melalui Khasiat Jamu: Kisah Inspiratif Seorang Pecandu Obat</h2>
                 <p class="home-article-card-text-desc">Kisah ini mengisahkan perjalanan seorang pria yang dulunya merupakan seorang pecandu obat-obatan t ...</p>
-                <a class="home-article-card-text-extend" href="">Link Selengkapnya</a>
+                <a class="home-article-card-text-extend" href="<?php echo home_url( 'artikel' ) ?>" class="<?php if ( $CURRENT_URL == 'artikel' ) echo "current-link" ?>">Link Selengkapnya</a>
             </div>
         </div>
         <div class="home-article-card">
@@ -62,8 +62,8 @@
             <div class="home-article-card-text">
                 <h2 class="home-article-card-text-title">Perjuangan Seorang Wanita untuk Memiliki Anak</h2>
                 <p class="home-article-card-text-desc">Kisah ini mengisahkan tentang seorang wanita yang mengalami kesulitan dalam merencanakan kehamilan ...</p>
-                <a class="home-article-card-text-extend" href="">Link Selengkapnya</a>
+                <a class="home-article-card-text-extend" href="<?php echo home_url( 'artikel' ) ?>" class="<?php if ( $CURRENT_URL == 'artikel' ) echo "current-link" ?>">Link Selengkapnya</a>
             </div>
         </div>
     </div>
-</div>
+</section>

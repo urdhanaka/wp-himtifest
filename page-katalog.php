@@ -1,13 +1,10 @@
-<?php 
+<?php
 
 get_header();
 
-?>
+get_template_part( 'sections/catalog-hero' );
+get_template_part( 'sections/catalog-catalogs' );
 
-<h1>This text is from page-catalogue</h1>
-
-<?php
-
-get_footer();
+get_footer()
 
 ?>

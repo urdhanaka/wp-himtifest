@@ -72,5 +72,5 @@ function filterKecantikan() {
 }
 
 function catalogAlert() {
-    alert("That's All For The Catalog");
+    alert("Tidak ada yang perlu ditampilkan lagi!");
 }
