@@ -21,7 +21,7 @@ $CURRENT_URL = add_query_arg( array(), $wp->request );
             <div class="flex-header-nav">
                 <a href="<?php echo home_url( '' ) ?>" class="<?php if ( $CURRENT_URL == '' ) echo "current-link" ?>">Beranda</a>  
                 <a href="<?php echo home_url( 'about' ) ?>" class="<?php if ( $CURRENT_URL == 'about' ) echo "current-link" ?>">Tentang Kami</a> 
-                <a href="<?php echo home_url( 'katalog' ) ?>" class="<?php if ( $CURRENT_URL == 'katalog' ) echo "current-link" ?>">Katalog</a>  
+                <a href="<?php echo home_url( 'catalog' ) ?>" class="<?php if ( $CURRENT_URL == 'catalog' ) echo "current-link" ?>">Katalog</a>  
                 <a href="<?php echo home_url( 'article' ) ?>" class="<?php if ( $CURRENT_URL == 'article' ) echo "current-link" ?>">Artikel</a>  
                 <button onclick="burgerButton()">=</button>
             </div>
@@ -30,7 +30,7 @@ $CURRENT_URL = add_query_arg( array(), $wp->request );
             <div class="flex-header-nav-burger">
                 <a href="<?php echo home_url( '' ) ?>" class="<?php if ( $CURRENT_URL == '' ) echo "current-link" ?>">Beranda</a>  
                 <a href="<?php echo home_url( 'about' ) ?>" class="<?php if ( $CURRENT_URL == 'about' ) echo "current-link" ?>">Tentang Kami</a>  
-                <a href="<?php echo home_url( 'katalog' ) ?>" class="<?php if ( $CURRENT_URL == 'katalog' ) echo "current-link" ?>">Katalog</a>  
+                <a href="<?php echo home_url( 'catalog' ) ?>" class="<?php if ( $CURRENT_URL == 'catalog' ) echo "current-link" ?>">Katalog</a>  
                 <a href="<?php echo home_url( 'article' ) ?>" class="<?php if ( $CURRENT_URL == 'article' ) echo "current-link" ?>">Artikel</a>  
             </div>
         </div>

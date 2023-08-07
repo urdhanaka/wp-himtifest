@@ -1,13 +1,13 @@
 <footer class="site-footer content-footer">
     <div class="around-flex">
         <a href="/">
-            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-favicon.png" alt="">
+            <img src="http://localhost/wordpress/wp-content/uploads/bertiga-favicon-white.png" alt="">
         </a>
         <div class="around-flex-navbar">
-            <p><a href="">Beranda</a></p>
-            <p><a href="">Tentang Kami</a></p>
-            <p><a href="">Katalog</a></p>
-            <p><a href="">Artikel</a></p>
+            <p><a href="<?php echo home_url( '' ) ?>" class="<?php if ( $CURRENT_URL == '' ) echo "current-link" ?>">Beranda</a></p>
+            <p><a href="<?php echo home_url( 'about' ) ?>" class="<?php if ( $CURRENT_URL == 'about' ) echo "current-link" ?>">Tentang Kami</a></p>
+            <p><a href="<?php echo home_url( 'catalog' ) ?>" class="<?php if ( $CURRENT_URL == 'catalog' ) echo "current-link" ?>">Katalog</a></p>
+            <p><a href="<?php echo home_url( 'article' ) ?>" class="<?php if ( $CURRENT_URL == 'article' ) echo "current-link" ?>">Artikel</a></p>
         </div>
         <div class="around-flex-logo">
             <a href="">

@@ -3,23 +3,28 @@
 */
 
 .home-hero {
-    background-image: url("http://localhost/wordpress/wp-content/uploads/bertiga-bg-wp-beranda-3.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 90vh;
+    height: fit-content;
+    position: relative;
+}
+
+.home-hero-background {
+    width: 100%;
 }
 
 .home-hero-text {
     text-align: center;
     width: fit-content;
     height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     color: #366C66;
-    padding-top: 100px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    padding: 0 10px;
 }
 
 .home-hero-text-title {
@@ -53,47 +58,63 @@
 }
 
 @media (max-width: 1280px) {
-    .home-hero {
-        height:641.17px;
-    }
+    .home-hero-text-desc {
+        margin-bottom: 20px;
+    } 
 }
 
 @media (max-width: 1024px) {
-    .home-hero {
-        height:570.4px;
+    .home-hero-text-title {
+        font-size: 44px;
+    }
+    .home-hero-background {
+        margin-top: 10%;
     }
 }
 
 @media (max-width: 768px) {
-    .home-hero {
-        height:570.4px;
+}
+
+@media (max-width: 685px) {
+    .home-hero-background {
+        margin-top: 15%;
     }
 }
 
 @media (max-width: 655px) {
-    .home-hero {
-        height:570.4px;
-    }
     .home-hero-text-desc {
         width: fit-content;
-        margin-bottom: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
         padding: 0 20px;
+    }
+    .home-hero-background {
+        margin-top: 20%;
     }
 }
 
 @media (max-width: 565px) {
-    .home-hero {
-        height:470px;
-    }
-    .home-hero-text {
-        padding-top: 60px;
-    }
     .home-hero-text-title {
-        font-size: 44px;
+        font-size: 36px;
     }
     .home-hero-text-desc {
-        font-size: 16px;
-        margin-bottom: 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .home-hero-text {
+        top: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-hero-background {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 415px) {
+    .home-hero-background {
+        margin-top: 50%;
     }
 }
 
@@ -161,11 +182,21 @@
     margin: auto auto;
 }
 
+@media (max-width: 1265px) {
+    .home-about {
+        gap: 20px;
+    }
+    .home-about-text {
+        width: fit-content;
+        padding: 0 20px;
+    }    
+}
+
 @media (max-width: 1024px) {
     .home-about {
         gap: 40px;
     }
-    .home-about .text {
+    .home-about-text {
         width: 386.1px;
     }
 }
@@ -177,11 +208,11 @@
         row-gap: 80px;
         padding: 70px 20px 50px 20px;
     }
-    .home-about .text {
+    .home-about-text {
         width: fit-content;
         padding: 0px 20px;
     }
-    .home-about button {
+    .home-about-button {
         margin: auto auto;
     }
     .home-about img {
@@ -337,12 +368,12 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0 20px;
 }
 
 .home-article-header {
     display: flex;
     justify-content: space-around;
+    padding: 0 20px;
 }
 
 .home-article-header-text {

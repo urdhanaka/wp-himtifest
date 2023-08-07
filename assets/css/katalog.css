@@ -1,0 +1,342 @@
+/*
+! CATALOG-HERO
+*/
+
+.catalog-hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    margin-top: 15%;
+    position: relative;
+}
+
+.catalog-hero-background {
+    width: 100%;
+}
+
+.catalog-hero-text {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: #366C66;
+    position: absolute;
+    top: -40%;
+    right: 0;
+    left: 0;
+    padding: 0 10px;
+}
+
+.catalog-hero-text-title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.catalog-hero-text-desc {
+    width: 630px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    color: black;
+}
+
+.catalog-hero-text-button {
+    border-width: 0px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.catalog-hero-text-button:hover {
+    border-width: 0px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+    .catalog-hero {
+        margin-top: 30%;
+    }
+    .catalog-hero-text {
+        top: -70%;
+    }
+    .catalog-hero-text-desc {
+        margin-bottom: 20px;
+    } 
+}
+
+@media (max-width: 1024px) {
+    .catalog-hero {
+        margin-top: 35%;
+    }
+    .catalog-hero-text {
+        top: -90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog-hero-background {
+        padding-top: 20px;
+    }
+    .catalog-hero-text-title {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 655px) {
+    .catalog-hero-text-desc {
+        width: fit-content;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 565px) {
+    .catalog-hero-text-title {
+        font-size: 36px;
+    }
+    .catalog-hero-text-desc {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .catalog-hero-background {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 415px) {
+    .catalog-hero-background {
+        padding-top: 60px;
+    }
+}
+
+/*
+! END CATALOG-HERO
+*/
+
+/*
+! SUB-TITLE
+*/
+
+.catalog-catalog {
+    width: fit-content;
+    margin: auto auto;
+    padding: 70px 0px 90px 0px;
+    display: flex;
+    gap: 40px;
+}
+
+.catalog-catalog-text {
+    display: flex;
+    gap: 20px;
+}
+
+.catalog-catalog-text-title {
+    color: #366C66;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* 
+! END SUB-TITLE
+*/
+
+/* 
+! CATALOG-FILTER-BUTTON
+*/
+
+.catalog-filter {
+    display: grid;
+    gap: 10px;
+    width: fit-content;
+    margin: auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+@media (max-width: 500px) {
+    .catalog-filter {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.catalog-filter-button {
+    border-width: 2px;
+    border-color: #366C66;
+    color: #366C66;
+    font-weight: 500;
+    background-color: white;
+    border-style: solid;
+    border-radius: 9999px;
+    padding: 5px 20px;
+}
+
+#filter-semua {
+    border-width: 2px;
+    border-color: #366C66;
+    color: white;
+    font-weight: 500;
+    background-color: #366C66;
+}
+
+.catalog-filter-button:hover {
+    border-width: 2px;
+    border-color: grey;
+    color: white;
+    font-weight: 500;
+    background-color: grey;
+}
+
+/* 
+! END CATALOG-FILTER-BUTTON
+*/
+
+/*
+! CATALOG
+*/
+
+.catalog-catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+@media (max-width: 640px) {
+    .catalog-catalog {
+        gap: 40px
+    }
+}
+
+.catalog-box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.catalog {
+    width: fit-content;
+    margin: auto auto;
+    padding: 70px 0px 90px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.catalog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.catalog-text-title {
+    color: #366C66;
+    font-weight: 600;
+    margin: auto auto;
+    width: fit-content;
+}
+
+.catalog-text-desc {
+    font-size: 18px;
+    margin: auto auto;
+    width: fit-content;
+}
+
+.catalog-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    z-index: 10;
+}
+
+.catalog-card {
+    width: 315px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: white;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+
+.catalog-card:hover {
+    transform: scale(1.05);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.catalog-card img {
+    width: 315px;
+}
+
+.catalog-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    color: black;
+}
+
+.catalog-card-text-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.catalog-card-text-desc {
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.catalog-button {
+    padding: 14px 28px;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    border: 1px solid #366C66;
+    background-color: transparent;
+    color: #366C66;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    gap: 12px;
+}
+
+.catalog-button:hover {
+    background-color: #22413d;
+    color: white;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+@media (max-width: 1280px) {
+    .catalog-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+    .catalog-cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .catalog-text {
+        padding: 0 20px;
+    }
+}
+
+/*
+! END CATALOG
+*/
