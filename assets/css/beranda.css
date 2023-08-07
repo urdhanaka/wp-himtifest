@@ -50,6 +50,7 @@
     border-width: 0px;
     background-color: transparent;
     text-decoration: none;
+    cursor: pointer;
 }
 
 @media (max-width: 1280px) {
