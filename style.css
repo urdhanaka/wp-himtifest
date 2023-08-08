@@ -272,75 +272,83 @@ header {
 
 .floating-post {
     position: fixed;
-    /* width: fit-content;
-    height: fit-content; */
-    width: 300px;
-    height: fit-content;
-    min-height: 300px;
-    background-color: white;
-    filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-
+    width: 100%; /* Menutupi seluruh lebar layar */
+    height: 100%; /* Menutupi seluruh tinggi layar */
+    background-color: rgba(255, 255, 255, 0.9); /* Background dengan transparansi */
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-
-    margin: auto;
-
-    border-radius: 12px;
-
     z-index: 9999;
-
     overflow: hidden;
-
     display: none;
 }
 
 .floating-post-text {
-    padding: 70px 20px;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+    position: absolute;
+    top: 50%; /* Tengah vertikal */
+    left: 50%; /* Tengah horizontal */
+    transform: translate(-50%, -50%);
+    width: 90%; /* Lebar konten */
+    max-width: 300px; /* Maksimum lebar konten */
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .floating-post-text h2 {
     color: black;
     font-size: 24px;
     font-weight: 800;
+    margin-bottom: 10px;
 }
 
 .floating-post-text p {
     color: grey;
     font-size: 14px;
     font-weight: 800;
+    margin-bottom: 20px;
 }
 
 .floating-post-close {
     position: absolute;
     top: 10px;
-    left: 10px;
+    right: 10px;
     background-color: transparent;
     color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #366C66;
+    border: 2px solid #366C66;
     width: 40px;
     height: 40px;
     font-weight: 700;
-    border-radius: 99999px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .floating-post-close:hover {
-    /* background-color: red; */
     border-color: red;
     color: black;
-    /* border-width: 10px; */
     font-weight: 900;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
+    transition: all 0.15s ease-in-out;
 }
 
 /*
 ! END FLOATING
 */
+
+/* Menambahkan efek blur pada latar belakang */
+body.floating-active {
+    overflow: hidden;
+}
+
+.floating-post-blur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    backdrop-filter: blur(10px);
+}
